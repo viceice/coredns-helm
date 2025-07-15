@@ -3,6 +3,34 @@ entries:
   coredns:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: Added support for initContainers in the deployment.
+    apiVersion: v2
+    appVersion: 1.12.2
+    created: "2025-07-15T00:44:39.443439063Z"
+    description: CoreDNS is a DNS server that chains plugins and provides Kubernetes
+      DNS Services
+    digest: 9fc968eafff05fbf237ca5d26ab3e9e2206ca2a474ee56052066a009c4e583ab
+    home: https://coredns.io
+    icon: https://coredns.io/images/CoreDNS_Colour_Horizontal.png
+    keywords:
+    - coredns
+    - dns
+    - kubedns
+    maintainers:
+    - name: mrueg
+    - name: haad
+    - name: hagaibarel
+    - name: shubham-cmyk
+    name: coredns
+    sources:
+    - https://github.com/coredns/coredns
+    type: application
+    urls:
+    - https://github.com/viceice/coredns-helm/releases/download/coredns-1.43.0/coredns-1.43.0.tgz
+    version: 1.43.0
+  - annotations:
+      artifacthub.io/changes: |
         - Initial helm chart changelog
     apiVersion: v2
     appVersion: 1.8.4
@@ -226,4 +254,4 @@ entries:
     urls:
     - https://github.com/coredns/helm/releases/download/coredns-1.14.0/coredns-1.14.0.tgz
     version: 1.14.0
-generated: "2021-07-24T21:47:46.476200986Z"
+generated: "2025-07-15T00:44:39.443475411Z"
