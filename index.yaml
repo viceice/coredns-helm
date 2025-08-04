@@ -3,6 +3,34 @@ entries:
   coredns:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: ServiceAccount now applies the `customLabels` field if set.
+    apiVersion: v2
+    appVersion: 1.12.2
+    created: "2025-08-04T18:44:39.486904298Z"
+    description: CoreDNS is a DNS server that chains plugins and provides Kubernetes
+      DNS Services
+    digest: 252dbddb57022c627f87a6ff17ab3e739481bb3c834be34cfd5dc2fb954e44de
+    home: https://coredns.io
+    icon: https://coredns.io/images/CoreDNS_Colour_Horizontal.png
+    keywords:
+    - coredns
+    - dns
+    - kubedns
+    maintainers:
+    - name: mrueg
+    - name: haad
+    - name: hagaibarel
+    - name: shubham-cmyk
+    name: coredns
+    sources:
+    - https://github.com/coredns/coredns
+    type: application
+    urls:
+    - https://github.com/viceice/coredns-helm/releases/download/coredns-1.43.1/coredns-1.43.1.tgz
+    version: 1.43.1
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Added support for initContainers in the deployment.
     apiVersion: v2
@@ -254,4 +282,4 @@ entries:
     urls:
     - https://github.com/coredns/helm/releases/download/coredns-1.14.0/coredns-1.14.0.tgz
     version: 1.14.0
-generated: "2025-07-15T00:44:39.443475411Z"
+generated: "2025-08-04T18:44:39.486988199Z"
